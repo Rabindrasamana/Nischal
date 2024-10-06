@@ -470,38 +470,30 @@ buffer = BytesIO()
 c = pycurl.Curl()
 c.setopt(c.URL, aplnk)
 c.setopt(c.WRITEDATA, buffer)
-try:c.perform()
-except pycurl.error:exit(f"[●] PLEASE CHECK YOUR INTERNET CONNECTION ! ")
+try:
+    c.perform()
+except pycurl.error:
+    exit(f"[●] PLEASE CHECK YOUR INTERNET CONNECTION ! ")
 c.close()
 body = buffer.getvalue().decode('utf-8')
 link = body
+
 def ___ApPrObLE___():
-    key = "=[RABINDRA]=["+str(os.geteuid())+str(os.getlogin()).replace('u0_a','')+"]="
-    if key in link:
-        clear2()
-        import getpass
-        attemps = 0
-        while attemps < 12345677901:
-            encoded_key = base64.b64encode(key.encode('utf-8'))
-            lic = encoded_key.decode('utf-8')
-            keyl = input(f' {red}[{white}✘{red}] {green}LICENSE KEY {red}➤ {green} ')
-            if keyl == lic:
-                break
-            else:
-                os.system('clear')
-                print(f' {red}[{white}✘{red}] {green}INCORRECT LICENSE KEY PLEASE TRYING ! ');time.sleep(1)
-                print(f' {red}[{white}✘{red}] {green}TRYING REAL LICENSE KEY ! ');exit()
-        ___ImRAn___MaIN___MenU___()
-    else:
-        clear2()
-        print(f" {red}[{white}●{red}]{green} FILE WORK {red}➠ \033[38;5;180mALL COUNTRY WORK")
-        print(f" {red}[{white}●{red}]{green} RNDM WORK {red}➠ \033[38;5;180mBD,INDIA,NEPAL,MALYASIA,PAK..ETC")
-        linex()
-        print(f" {red}[{white}●{red}]{green} YOUR KEY  {red}➠\033[38;5;82m {key}");linex()
-        print(f" {red}[{white}●{red}] \033[38;5;180mIF YOU FULLY NEW USERS DON'T BUY ! {red}&&")
-        print(f" {red}[{white}●{red}] \033[38;5;180mIF YOU DELETE TERMUX I'LL NOT APPROVE AGAIN !")
-        linex()
-        input(f" {red}[{white}●{red}]{green} TOOL'S PAID IF YOU BUY ENTER & CONTACT");os.system("xdg-open https://www.facebook.com/RABINDRA404OFFICIAL");time.sleep(5);exit()
+    clear2()
+    print(f" {red}[{white}●{red}]{green} FILE WORK {red}➠ \033[38;5;180mALL COUNTRY WORK")
+    print(f" {red}[{white}●{red}]{green} RNDM WORK {red}➠ \033[38;5;180mBD,INDIA,NEPAL,MALAYSIA,PAK..ETC")
+    linex()
+    print(f" {red}[{white}●{red}]{green} YOUR KEY  {red}➠\033[38;5;82m [RABINDRA]=[0]")
+    linex()
+    print(f" {red}[{white}●{red}] \033[38;5;180mIF YOU FULLY NEW USERS DON'T BUY ! {red}&&")
+    print(f" {red}[{white}●{red}] \033[38;5;180mIF YOU DELETE TERMUX I'LL NOT APPROVE AGAIN !")
+    linex()
+    input(f" {red}[{white}●{red}]{green} TOOL'S PAID IF YOU BUY ENTER & CONTACT")
+    os.system("xdg-open https://www.facebook.com/RABINDRA404OFFICIAL")
+    time.sleep(5)
+    exit()
+
+___ApPrObLE___()
 #---------MAIN
 def ___ImRAn___MaIN___MenU___():
     clear()
